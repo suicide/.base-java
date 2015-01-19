@@ -47,3 +47,9 @@ then
 	export PATH="$PATH:$ANT_HOME/bin"
 fi
 
+## java osx
+javaOsxInclude="$HOME/.source/java-osx"
+if [ -e "$javaOsxInclude" ]
+then
+	source $javaOsxInclude
+fi
