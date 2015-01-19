@@ -1,0 +1,49 @@
+
+## scala
+scalaHome="/opt/scala/current"
+if [ -e "$scalaHome" ] 
+then
+	export SCALA_HOME=$scalaHome
+	export PATH="$PATH:$SCALA_HOME/bin"
+fi
+
+## groovy
+groovyHome="/opt/groovy/current"
+if [ -e "$groovyHome" ] 
+then
+	export GROOVY_HOME=$groovyHome
+	export PATH="$PATH:$GROOVY_HOME/bin"
+fi
+
+## gradle
+gradleHome="/opt/gradle/current"
+if [ -e "$gradleHome" ] 
+then
+	export GRADLE_HOME=$gradleHome
+	export PATH="$PATH:$GROOVY_HOME/bin"
+fi
+
+## maven
+mavenHome="/opt/maven/current"
+if [ -e "$mavenHome" ] 
+then
+	export M2_HOME=$mavenHome
+	export PATH="$PATH:$M2_HOME/bin"
+fi
+
+## sbt
+sbtHome="/opt/sbt/current"
+if [ -e "$sbtHome" ] 
+then
+	export SBT_HOME=$sbtHome
+	export PATH="$PATH:$SBT_HOME/bin"
+fi
+
+## ant
+antHome="/opt/ant/current"
+if [ -e "$antHome" ] 
+then
+	export ANT_HOME=$antHome
+	export PATH="$PATH:$ANT_HOME/bin"
+fi
+
