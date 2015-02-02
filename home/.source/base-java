@@ -29,6 +29,7 @@ if [ -e "$mavenHome" ]
 then
 	export M2_HOME=$mavenHome
 	export PATH="$PATH:$M2_HOME/bin"
+	export MAVEN_OPTS="-Xmx2048m -XX:MaxPermSize=256m -Dfile.encoding=UTF-8"
 fi
 
 ## sbt
