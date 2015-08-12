@@ -1,4 +1,9 @@
 
+## jenv
+jenvHome="$HOME/.jenv/bin"
+export PATH="$PATH:$jenvHome"
+eval "$(jenv init -)"
+
 ## scala
 scalaHome="/opt/scala/current"
 if [ -e "$scalaHome" ] 
@@ -29,7 +34,7 @@ if [ -e "$mavenHome" ]
 then
 	export M2_HOME=$mavenHome
 	export PATH="$PATH:$M2_HOME/bin"
-	export MAVEN_OPTS="-Xmx2048m -XX:MaxPermSize=256m -Dfile.encoding=UTF-8"
+	export MAVEN_OPTS="-Xmx2048m -XX:MaxPermSize=256m -Dfile.encoding=UTF-8 -Djava.awt.headless=true"
 fi
 
 ## sbt
