@@ -28,7 +28,7 @@ gradleHome="/opt/gradle/current"
 if [ -e "$gradleHome" ] 
 then
 	export GRADLE_HOME=$gradleHome
-	export PATH="$PATH:$GROOVY_HOME/bin"
+	export PATH="$PATH:$GRADLE_HOME/bin"
 fi
 
 ## maven
