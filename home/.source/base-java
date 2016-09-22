@@ -56,6 +56,14 @@ then
 	export PATH="$PATH:$ANT_HOME/bin"
 fi
 
+## grails
+grailsHome="/opt/grails/current"
+if [ -e "$grailsHome" ] 
+then
+	export GRAILS_HOME=$grailsHome
+	export PATH="$PATH:$GRAILS_HOME/bin"
+fi
+
 ## java osx
 javaOsxInclude="$HOME/.source/java-osx"
 if [ -e "$javaOsxInclude" ]
