@@ -70,3 +70,11 @@ if [ -e "$javaOsxInclude" ]
 then
 	source $javaOsxInclude
 fi
+
+## android sdk osx
+androidSdkOsxInclude="/usr/local/share/android-sdk"
+if [ -e "$androidSdkOsxInclude" ]
+then
+	export ANDROID_SDK_ROOT=$androidSdkOsxInclude
+fi
+
