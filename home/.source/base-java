@@ -5,6 +5,7 @@ if [ -e "$jenvHome" ]
 then
 	export PATH="$PATH:$jenvHome"
 	eval "$(jenv init -)"
+        export JAVA_HOME="$(jenv prefix)"
 fi
 
 ## scala
